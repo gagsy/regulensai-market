@@ -197,16 +197,24 @@
     </section>
 
     <section id="demo" class="py-12 px-6">
-        <div class="max-w-6xl mx-auto">
-            <div class="bg-slate-900 aspect-video rounded-3xl shadow-2xl flex items-center justify-center relative overflow-hidden group border border-slate-800">
-                <div class="absolute inset-0 bg-gradient-to-tr from-indigo-500/20 to-transparent"></div>
-                <button class="z-10 bg-white/10 backdrop-blur-md p-6 rounded-full border border-white/20 hover:scale-110 transition group-hover:bg-indigo-600/20">
-                    <svg class="w-12 h-12 text-white fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                </button>
-                <span class="absolute bottom-8 text-white/50 font-mono text-xs tracking-widest">REGULENS_AI_DEMO_V1.MP4</span>
-            </div>
+    <div class="max-w-6xl mx-auto">
+        <div id="video-container" class="bg-slate-900 aspect-video rounded-3xl shadow-2xl flex items-center justify-center relative overflow-hidden group border border-slate-800">
+            <div class="absolute inset-0 bg-gradient-to-tr from-indigo-500/20 to-transparent"></div>
+            
+            <video id="regulens-video" class="hidden w-full h-full object-cover" controls>
+                <source src="REGULENS_AI_DEMO_V1.MP4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <button id="play-btn" onclick="startVideo()" class="z-10 bg-white/10 backdrop-blur-md p-6 rounded-full border border-white/20 hover:scale-110 transition group-hover:bg-indigo-600/20">
+                <svg class="w-12 h-12 text-white fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </button>
+            
+            <span id="video-label" class="absolute bottom-8 text-white/50 font-mono text-xs tracking-widest uppercase">REGULENS_AI_DEMO_V1.MP4</span>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <section class="py-32 px-6 bg-slate-50">
         <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
@@ -377,5 +385,21 @@
         window.addEventListener("scroll", reveal);
         reveal(); // Initial check
     </script>
+    
+<script>
+function startVideo() {
+    const video = document.getElementById('regulens-video');
+    const playBtn = document.getElementById('play-btn');
+    const label = document.getElementById('video-label');
+    
+    // Hide UI elements
+    playBtn.style.display = 'none';
+    label.style.display = 'none';
+    
+    // Show and play video
+    video.classList.remove('hidden');
+    video.play();
+}
+</script>
 </body>
 </html>
