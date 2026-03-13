@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReguLens AI – $1B Multi-Cloud Security Infrastructure</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .bg-grid { background-image: radial-gradient(#e2e8f0 1px, transparent 1px); background-size: 30px 30px; }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        @keyframes pulse-ring { 0% { transform: scale(0.33); opacity: 1; } 80%, 100% { opacity: 0; } }
+        .node-pulse { position: absolute; width: 100%; height: 100%; border-radius: 50%; background-color: #ef4444; animation: pulse-ring 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite; }
+        
+        .terminal-bg { background: #0f172a; border: 1px solid #1e293b; }
+        .gold-glow { box-shadow: 0 0 40px rgba(79, 70, 229, 0.15); }
+    </style>
+</head>
+<body class="bg-white text-slate-900 bg-grid">
+
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-2xl font-extrabold flex items-center gap-2">
+                <div class="w-8 h-8 bg-indigo-600 rounded-lg shadow-lg shadow-indigo-200"></div>
+                ReguLens <span class="text-indigo-600">AI</span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-semibold text-slate-500">
+                <a href="#scanner" class="hover:text-indigo-600 transition">AI Scanner</a>
+                <a href="#plug-and-play" class="hover:text-indigo-600 transition">Plug & Play</a>
+                <a href="#graph" class="hover:text-indigo-600 transition">Attack Topology</a>
+                <a href="#roadmap" class="hover:text-indigo-600 transition">Remediation</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="hidden lg:block text-[10px] font-bold text-indigo-600 bg-indigo-50 px-2 py-1 rounded tracking-tighter uppercase">Valuation Grade IP</span>
+                <a href="#demo" class="bg-indigo-600 text-white px-6 py-2 rounded-full font-bold hover:shadow-lg transition">Watch Demo Video</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-40 pb-10 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <span class="bg-indigo-50 text-indigo-600 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest">Enterprise Ready for Acquisition transfer</span>
+            <h1 class="text-6xl md:text-7xl font-extrabold mt-6 mb-8 tracking-tight text-slate-900 leading-tight">Zero-Friction Security for <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-cyan-500">Global Clouds.</span></h1>
+            <p class="text-xl text-slate-600 mb-10 leading-relaxed max-w-2xl mx-auto">Automate compliance with our proprietary <strong>Plug & Play</strong> Security Agent. No complex setup—just enterprise-grade intelligence in a single command.</p>
+        </div>
+    </section>
+
+    <section id="scanner" class="pb-20 px-6">
+        <div class="max-w-5xl mx-auto reveal">
+            <div class="text-center mb-8">
+                <h3 class="text-sm font-bold text-indigo-600 uppercase tracking-[0.2em] mb-4">The Security Agent in Action</h3>
+                <p class="text-slate-500 max-w-xl mx-auto leading-relaxed">Simply prompt the agent in natural language to trigger deep, cross-platform audits using our proprietary Graph Engine.</p>
+            </div>
+            <div class="bg-white p-2 rounded-[2rem] shadow-2xl border border-slate-100 overflow-hidden gold-glow">
+                <img src="aicoomandbar.png" 
+                     alt="ReguLens AI Scanner Hub Interface" 
+                     class="w-full h-auto rounded-[1.8rem]">
+            </div>
+        </div>
+    </section>
+
+    <section id="plug-and-play" class="py-24 px-6 bg-slate-900 text-white relative overflow-hidden">
+        <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <span class="text-indigo-400 font-bold text-xs uppercase tracking-widest">Technical Moat</span>
+                <h2 class="text-4xl font-bold mt-4 mb-6 leading-tight">Revolutionary Plug & Play<br>via Docker</h2>
+                <p class="text-slate-400 text-lg mb-8 leading-relaxed">
+                    Integration debt kills SaaS valuation. ReguLens AI eliminates it. Our engine is packaged as a lightweight Docker container, allowing teams to "Plug & Play" into any cloud environment without installing intrusive agents on local servers.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white/5 p-6 rounded-2xl border border-white/10 hover:bg-white/10 transition">
+                        <h4 class="font-bold text-indigo-300 mb-2">Zero integration Debt</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">No custom code required. Deploy into your existing CI/CD pipeline in under 60 seconds.</p>
+                    </div>
+                    <div class="bg-white/5 p-6 rounded-2xl border border-white/10 hover:bg-white/10 transition">
+                        <h4 class="font-bold text-indigo-300 mb-2">Instant ROI Visualization</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">Deliver full compliance gap analysis (SOC2/GDPR) within the first 5 minutes of activation.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="terminal-bg p-6 rounded-2xl shadow-2xl reveal">
+                <div class="flex gap-2 mb-4">
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                </div>
+                <div class="font-mono text-sm space-y-2">
+                    <p class="text-slate-500">$ docker pull regulens/ai-agent:latest</p>
+                    <p class="text-indigo-400">Pulling compliance intelligence engine...</p>
+                    <p class="text-slate-500">$ docker-compose up -d</p>
+                    <p class="text-green-400">[SUCCESS] Plug & Play Module Active</p>
+                    <p class="text-green-400">[SUCCESS] Linked to 432 S3 Buckets</p>
+                    <p class="text-green-400">[SUCCESS] Initial Compliance Report Generated</p>
+                    <p class="animate-pulse text-white mt-4">_</p>
+                </div>
+                <div class="mt-8 pt-6 border-t border-white/10">
+                    <p class="text-[10px] text-slate-500 uppercase tracking-widest mb-2 text-center">Engineered for Hyper-Growth</p>
+                    <div class="flex justify-around opacity-50">
+                        <span class="text-xs font-bold tracking-tighter uppercase">Docker</span>
+                        <span class="text-xs font-bold tracking-tighter uppercase">Kubernetes</span>
+                        <span class="text-xs font-bold tracking-tighter uppercase">AWS ECS</span>
+                        <span class="text-xs font-bold tracking-tighter uppercase">GCP Run</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 bg-indigo-50 border-y border-indigo-100">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid lg:grid-cols-3 gap-12 items-center">
+                <div class="lg:col-span-1">
+                    <h2 class="text-3xl font-extrabold text-slate-900 mb-4">Built for a Seamless Exit</h2>
+                    <p class="text-slate-600">We don't just sell the code; we ensure the success of the transition. Our IP transfer comes with guaranteed technical stewardship.</p>
+                </div>
+                <div class="lg:col-span-2 grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-indigo-100 hover:shadow-md transition">
+                        <div class="w-12 h-12 bg-indigo-600 text-white rounded-2xl flex items-center justify-center mb-6 font-bold">6m</div>
+                        <h4 class="text-xl font-bold mb-3">Post-Purchase Support</h4>
+                        <p class="text-sm text-slate-500 leading-relaxed">Full technical handover and support for 6 months after acquisition. We guarantee a 100% bug-free transition of all Dockerized environments.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-indigo-100 hover:shadow-md transition">
+                        <div class="w-12 h-12 bg-indigo-600 text-white rounded-2xl flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">Enterprise Customization</h4>
+                        <p class="text-sm text-slate-500 leading-relaxed">Ready-to-deploy modules for scanning **AWS Instances** and **Managed Databases (RDS)**. Custom scanning logic can be tailored to meet high-ticket client requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="demo" class="py-12 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="bg-slate-900 aspect-video rounded-3xl shadow-2xl flex items-center justify-center relative overflow-hidden group border border-slate-800">
+                <div class="absolute inset-0 bg-gradient-to-tr from-indigo-500/20 to-transparent"></div>
+                <button class="z-10 bg-white/10 backdrop-blur-md p-6 rounded-full border border-white/20 hover:scale-110 transition group-hover:bg-indigo-600/20">
+                    <svg class="w-12 h-12 text-white fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                </button>
+                <span class="absolute bottom-8 text-white/50 font-mono text-xs tracking-widest">REGULENS_AI_DEMO_V1.MP4</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 px-6 bg-slate-50">
+        <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
+            <div>
+                <h2 class="text-4xl font-bold mb-6 text-slate-900 leading-tight">Seamless Cloud Connection</h2>
+                <p class="text-slate-600 mb-8 text-lg leading-relaxed">
+                    ReguLens AI bridges the gap between AWS and GCP. Our <strong>Infrastructure Discovery</strong> interface provides a unified entry point to link your credentials. Once connected, our agentic AI autonomously discovers every storage bucket, compute instance, and IAM role across your entire global footprint.
+                </p>
+                <div class="flex gap-4">
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex items-center gap-3 font-semibold text-sm">
+                        <img src="https://img.icons8.com/color/48/amazon-web-services.png" class="w-6 h-6"/> AWS Active
+                    </div>
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex items-center gap-3 font-semibold text-sm">
+                        <img src="https://img.icons8.com/color/48/google-logo.png" class="w-6 h-6"/> GCP Active
+                    </div>
+                </div>
+            </div>
+            
+            <div class="relative flex justify-center reveal">
+                <div class="animate-float relative z-10">
+                    <img src="connect.png" 
+                         alt="ReguLens Infrastructure Discovery Dashboard" 
+                         class="rounded-[2.5rem] shadow-2xl border border-white">
+                </div>
+                <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-indigo-200/50 rounded-full blur-3xl -z-10 animate-pulse"></div>
+                <div class="absolute -top-10 -left-10 w-48 h-48 bg-cyan-100/50 rounded-full blur-3xl -z-10"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="graph" class="py-32 px-6 bg-slate-900 text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+                <div class="max-w-2xl">
+                    <h2 class="text-4xl font-bold mb-4 tracking-tight">Visual Attack Topology</h2>
+                    <p class="text-slate-400 text-lg">
+                        Graphs are superior to lists. They reveal the <strong>context</strong> of a threat. By visualizing your infrastructure as a graph, ReguLens AI identifies "hidden paths" an attacker would take to reach your data.
+                    </p>
+                </div>
+                <div class="bg-red-500/10 border border-red-500/50 p-6 rounded-3xl backdrop-blur-sm">
+                    <div class="text-red-500 text-4xl font-black">98/100</div>
+                    <div class="text-[10px] uppercase font-bold tracking-widest text-red-400 mt-1">Critical Risk Level</div>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-12 items-start">
+                <div class="lg:col-span-2 relative reveal">
+                    <div class="bg-slate-800 p-2 rounded-[2.5rem] shadow-3xl border border-white/5 overflow-hidden">
+                        <img src="aiscaner.png" 
+                             alt="AI Attack Vector Analysis Map" 
+                             class="w-full h-auto rounded-[2rem] opacity-90 hover:opacity-100 transition duration-500">
+                    </div>
+                    
+                    <div class="absolute top-6 left-10 flex items-center gap-3 bg-slate-900/80 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 shadow-xl">
+                        <span class="relative flex h-3 w-3">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+                        </span>
+                        <span class="text-xs font-bold tracking-widest text-white/90">LIVE ATTACK PATH CALCULATED</span>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="bg-white/5 p-8 rounded-3xl border border-white/10 backdrop-blur-sm hover:bg-white/10 transition">
+                        <h4 class="text-xl font-bold mb-4 text-indigo-400">Attack Path Explanation</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            An attacker can bypass internal controls via direct requests to storage endpoints. Because these buckets are public, no lateral movement is required—the sensitive data is exposed at the storage layer as identified in the <strong>AI Attack Vector Analysis</strong>.
+                        </p>
+                    </div>
+                    <div class="bg-white/5 p-8 rounded-3xl border border-white/10 italic text-slate-400">
+                        <p class="text-sm">"The environment is facing a massive, multi-cloud data exposure event. Multiple AWS S3 and GCP buckets contain sensitive backup data accessible directly from the public internet."</p>
+                        <div class="mt-4 flex items-center gap-3 not-italic">
+                            <div class="w-8 h-8 rounded-full bg-indigo-600 flex items-center justify-center text-[10px] font-bold">RL</div>
+                            <span class="text-xs font-bold text-slate-300">ReguLens Intelligence Report</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="roadmap" class="py-32 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold">Remediation Roadmap</h2>
+                <p class="text-slate-600 mt-4 text-lg">Step-by-step instructions to eliminate critical vulnerabilities.</p>
+            </div>
+            
+            <div class="space-y-6">
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 flex gap-6 items-start hover:shadow-xl hover:border-indigo-100 transition duration-300 reveal">
+                    <div class="bg-red-100 text-red-600 px-4 py-2 rounded-xl text-xs font-bold uppercase shrink-0 tracking-widest">CRITICAL</div>
+                    <div>
+                        <h4 class="font-bold text-xl mb-2 text-slate-900">Restrict Public Access to Buckets</h4>
+                        <p class="text-slate-500 mb-4">Found on: AWS S3 (Finance-Backups), GCP (Customer-Assets). These were flagged in the discovery scan.</p>
+                        <div class="flex gap-3">
+                            <span class="text-[10px] font-bold uppercase bg-slate-100 px-3 py-1.5 rounded-lg text-slate-600">GDPR Clause 32</span>
+                            <span class="text-[10px] font-bold uppercase bg-slate-100 px-3 py-1.5 rounded-lg text-slate-600">SOC2 CC6.1</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 flex gap-6 items-start opacity-70 reveal">
+                    <div class="bg-yellow-100 text-yellow-600 px-4 py-2 rounded-xl text-xs font-bold uppercase shrink-0 tracking-widest">MEDIUM</div>
+                    <div>
+                        <h4 class="font-bold text-xl mb-2 text-slate-900">Rotate IAM Access Keys</h4>
+                        <p class="text-slate-500">Keys older than 90 days detected across 4 AWS users. Automation suggested via CI/CD.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 bg-indigo-600 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10"></div>
+        <div class="max-w-5xl mx-auto text-center px-6 relative z-10">
+            <h2 class="text-4xl font-bold mb-8 tracking-tight leading-tight">Ready for Audit. Ready for Exit.</h2>
+            <p class="text-xl mb-16 opacity-90 max-w-2xl mx-auto">Generate cryptographically verified compliance reports instantly based on your discovery and analysis results.</p>
+            <div class="flex flex-wrap justify-center gap-8">
+                <div class="bg-white/10 p-10 rounded-[2.5rem] border border-white/20 w-72 hover:bg-white/20 transition-all hover:-translate-y-2 duration-300 backdrop-blur-lg">
+                    <div class="text-4xl mb-6">📄</div>
+                    <h4 class="font-bold mb-3 text-xl">PDF Reports</h4>
+                    <p class="text-xs leading-relaxed opacity-70">Clean, professional formatting for executive stakeholders and regulatory auditors.</p>
+                </div>
+                <div class="bg-white/10 p-10 rounded-[2.5rem] border border-white/20 w-72 hover:bg-white/20 transition-all hover:-translate-y-2 duration-300 backdrop-blur-lg">
+                    <div class="text-4xl mb-6">txt</div>
+                    <h4 class="font-bold mb-3 text-xl">TXT Logs</h4>
+                    <p class="text-xs leading-relaxed opacity-70">Raw data for developer ingestion and real-time SIEM tool integration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white border-t border-slate-100">
+        <div class="max-w-4xl mx-auto text-center px-6">
+            <h3 class="font-bold mb-12 text-slate-400 uppercase tracking-widest text-sm">System Requirements</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+                <div><p class="text-3xl font-extrabold text-indigo-600">4+</p><p class="text-xs font-bold text-slate-500 uppercase tracking-widest mt-2">CORES</p></div>
+                <div><p class="text-3xl font-extrabold text-indigo-600">8GB</p><p class="text-xs font-bold text-slate-500 uppercase tracking-widest mt-2">RAM</p></div>
+                <div><p class="text-3xl font-extrabold text-indigo-600">ONNX</p><p class="text-xs font-bold text-slate-500 uppercase tracking-widest mt-2">ENGINE</p></div>
+                <div><p class="text-3xl font-extrabold text-indigo-600">DOCKER</p><p class="text-xs font-bold text-slate-500 uppercase tracking-widest mt-2">READY</p></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 border-t border-slate-100 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-10">
+            <div class="text-2xl font-bold">ReguLens <span class="text-indigo-600">AI</span></div>
+            <div class="flex gap-10 text-sm font-semibold text-slate-500">
+                <a href="privacy.html" class="hover:text-indigo-600 transition">Privacy Policy</a>
+                <a href="terms.html" class="hover:text-indigo-600 transition">Terms of Service</a>
+                <a href="mailto:support@regulens.ai" class="hover:text-indigo-600 transition">Contact</a>
+            </div>
+            <p class="text-slate-400 text-xs text-center md:text-right leading-relaxed max-w-xs">Built for high-scale multi-cloud compliance. Ready for seamless acquisition transfer on Acquire.com.</p>
+        </div>
+    </footer>
+
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        reveal(); // Initial check
+    </script>
+</body>
+</html>
